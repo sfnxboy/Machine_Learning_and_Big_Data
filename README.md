@@ -1,6 +1,10 @@
 # Machine Learning and Big Data
 
-Data is considered big data when it exceeds the capacity of operational databases. Working with datasets of this size creates unique challenges. How will we store all of this data? How can we access it quickly? How do we back up this type of data? A project dealing with big data outgrows Excel, SQL, and NoSQL databases. Apache Hadoop (Hadoop) is one of the most popular open source frameworks, with numerous technologies for big data. Google developed Hadoop to process large amounts of data by splitting data across a distributed file system. Dealing with big data can be quite taxing on computer hardware. So with the power of connected computers that work together and perform tasks, Hadoop can store and process data.
+Data is considered big data when it exceeds the capacity of operational databases. Working with datasets of this size creates unique challenges. How will we store all of this data? How can we access it quickly? How do we back up this type of data? A project dealing with big data outgrows Excel, SQL, and NoSQL databases. 
+
+## Hadoop
+
+Apache Hadoop (Hadoop) is one of the most popular open source frameworks, with numerous technologies for big data. Google developed Hadoop to process large amounts of data by splitting data across a distributed file system. Dealing with big data can be quite taxing on computer hardware. So with the power of connected computers that work together and perform tasks, Hadoop can store and process data.
 
 Hadoop has three main components:
 1. Hadoop Distributed File System (HDFS) is a file system used to store data across server clusters (groups of computers). It is scalable (which means it handles influxes of data), fault-tolerant (handles hardware failure), and distributed (spread across multiple servers connected by a common core).
@@ -22,3 +26,19 @@ For example, say you wanted to run a word count on a document. The following ima
 - **Final Result:** The complete list of words and value (counts) are displayed.
 
 The [MrJob](https://github.com/sfnxboy/Machine_Learning_and_Big_Data/tree/main/MrJob) folder in this repository contains code that executes the map reduce process via python script. You might have noticed that nowhere in the code is a file imported or opened. The mrjob library works by reading in a file passed to it in the terminal.
+
+## Spark
+
+Although Hadoop does the job of wrangling big data, it takes significant time configuring multiple servers on a computer. New technologies allow more flexibility in data processing. One of these technologies is **Spark**. Apache Spark (Spark) is a unified analytics engine for large-scale data processing. Spark lets you write applications in code that can run on Hadoop. However, Spark doesn't have to run on Hadoop, as it can run in stand-alone mode or in the cloud. Spark can be 100 times faster than Hadoop. This is because where Hadoop communicates with HDFS per computation, Spark uses in-memory computation and can retain as much as HDFS can in-memory.  Just like Hadoop's MapReduce, Spark works with data spread across a cluster, or a group of computers that work together.
+
+The Spark architecture includes the driver, executors, and the cluster manager:
+
+- The driver is the heart of the application. It is responsible for maintaining the application information; responding to the code or input; and analyzing, distributing, and scheduling work to the executors.
+- The executors perform the code assigned by the driver and then report the state of the computation to the driver.
+- The cluster manager controls the driver and executors and allocates resources to the machines on the Spark applications. The cluster manager is an external service for acquiring resources on the cluster. Spark can either use it's own standalone cluster manager that comes standard with Spark or another application (e.g., Apache Mesos, Hadoop YARN).
+
+Spark is very accessible through different programming languages. Spark was written in Scala, a tough programming language. However, there is an API that works with many languages to translate the code into Spark code and execute. Spark has an API in Java, Python, SQL, and R. In this project we will be using Python's flavor of spark, PySpark.
+
+### PySpark in Google Colab Notebooks
+
+Before we can begin using Spark, we need a place to do so. Cloud-based notebooks provide a remote workspace with stronger resources than our local laptop might allow. Cloud notebooks permit us to share our work with others, such as coworkers, similar to GitHub. [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) is a google-hosted notebook. 
