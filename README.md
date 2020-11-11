@@ -20,3 +20,5 @@ For example, say you wanted to run a word count on a document. The following ima
 - **Shuffling:** The words are combined and organized alphabetically, creating a list of the words' values.
 - **Reducing:** The list of values are summed for each word.
 - **Final Result:** The complete list of words and value (counts) are displayed.
+
+The [MrJob](https://github.com/sfnxboy/Machine_Learning_and_Big_Data/tree/main/MrJob) folder in this repository contains code that executes the map reduce process via python script. You might have noticed that nowhere in the code is a file imported or opened. The mrjob library works by reading in a file passed to it in the terminal.
