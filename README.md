@@ -42,3 +42,17 @@ Spark is very accessible through different programming languages. Spark was writ
 ### PySpark in Google Colab Notebooks
 
 Before we can begin using Spark, we need a place to do so. Cloud-based notebooks provide a remote workspace with stronger resources than our local laptop might allow. Cloud notebooks permit us to share our work with others, such as coworkers, similar to GitHub. [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) is a google-hosted notebook. 
+
+Just like we do with our local environment, we need to install packages for libraries we want to use. PySpark does not come native to Google Colab and needs to be installed. Paste the following code into the cell of your Google Colab file: [PySpark install code](https://github.com/sfnxboy/Machine_Learning_and_Big_Data/blob/main/PySpark_install_GC.txt)
+
+Create a Spark session by importing the library and setting the spark variable to the code below:
+```
+# Start Spark session
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("DataFrameBasics").getOrCreate()
+```
+
+Working in Spark requires us to put data into DataFrames. If you're wondering if these DataFrames are comparable to those in Pandas, you're correct—Spark DataFrames are very similar. The schema, or structure, for DataFrames and datasets contains the column names and the data types contained within. Schema can be read when the data is loaded or manually defined.
+
+Check out the following notebook file to see examples of dataset manipulation via PySpark: [PySpark_Demo1](https://github.com/sfnxboy/Machine_Learning_and_Big_Data/blob/main/PySpark_Demo1.ipynb)
+
