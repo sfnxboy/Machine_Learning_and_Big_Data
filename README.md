@@ -101,6 +101,6 @@ Part-of-Speech, or PoS can be helpful for a veriety of different models in NLP. 
 
 ![image](https://user-images.githubusercontent.com/68082808/98901760-4ceed100-2482-11eb-902b-3f3f19523aea.png)
 
-![image](https://user-images.githubusercontent.com/68082808/98897249-fd57d780-2478-11eb-82cd-3688686a61e0.png)
+![image](https://user-images.githubusercontent.com/68082808/98897010-61c66700-2478-11eb-94a4-11dbe89b55c0.png)
 
 Source Code: [PoS](https://github.com/sfnxboy/Machine_Learning_and_Big_Data/blob/main/Part_of_Speech_Tagging.ipynb)
