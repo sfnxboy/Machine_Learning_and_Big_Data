@@ -77,7 +77,7 @@ Natural language processing can get tricky. When individuals converse, they may 
 
 ### NLP Core Concepts
 
- __**Tokenization**__
+- __**Tokenization**__
 
 Tokenization is the concept of splitting a document, or line of text, into smaller subsets of data that can be analyzed. It's the building block of most NLP uses.
 
