@@ -56,3 +56,25 @@ Working in Spark requires us to put data into DataFrames. If you're wondering if
 
 Check out the following notebook file to see examples of dataset manipulation via PySpark: [PySpark_Demo1](https://github.com/sfnxboy/Machine_Learning_and_Big_Data/blob/main/PySpark_Demo1.ipynb)
 
+
+## Natural Language Processing
+
+Natural language processing (NLP) is a growing field of study that combines linguistics and computer science for computers to understand written, spoken, and typed natural language. NLP is the process of converting normal language to a machine readable format, which allows a computer to analyze text as if it were numerical data. NLP may be used for:
+
+- **Analyzing legal documents:** NLP can be used to analyze many types of legal documents. This can improve the outcome of a given case, as lawyers and staff can find critical information quickly.
+- **U.S. Securities and Exchange Commission (SEC) filings:** NLP is used to analyze SEC filings for various businesses. Companies use NLP to analyze filings for real-time business intelligence.
+- **Chatbots:** Chatbots are one of the most popular use cases. Chatbots can be used for selling products, customer support, and even medical help.
+
+Due to the massive amounts of text data needed to drive insights, we'll have to learn how to manage that data. There are a number of important use cases to delve into:
+
+- **Classifying text:** For many of the aforementioned use cases to work, a computer must know how to classify a given piece of text. Classification can mean a few different things in NLP. You can have classification of specific words, even specifying what the part of speech is. You can also classify what the text is as a whole.
+- **Extracting information:** Many NLP tasks require the ability to retrieve specific pieces of information from a given document. Think of the case where we are extracting data from law documents. You might want to extract certain aspects of that document to present good cases.
+- **Summarizing a document:** Summarization is a key aspect of NLP. It helps solve quite a few different problems. You can essentially create a model that summarizes a given document. This can be helpful to understand the high-level details of law documents, articles, and much more.
+
+We need NLP so that computers can better analyze language and someday communicate seamlessly with humans. Despite significant advancements in NLP, computers still struggle to understand the whole context of a text. For now, they just understand definitions and the literal meaning of a text. They don't understand sarcasm or subtext or anything not explicitly defined or expressed.
+
+Natural language processing can get tricky. When individuals converse, they may not always say what they intend to. Sarcasm is a great example. Say you are watching a game with a friend, and they ask you how your team is doing. You responding with "oh just fantastic," although you're incredibly frustrated because your favorite team is losing. On text, without detecting sarcasm, you are giving the impression that you are impressed by your teams performance. Another example is tone. Your coworker asks you for a favor, you can then respond with "Great, I'll get right on it" or Great! I'll get right on it!". The former line has a bland, tired voice behind it, whereas the second line definetly sounds more excited! Same text, different tones. These are just two examples of the complexity of dealing with natural language. 
+
+### NLP Core Concepts
+
+#### Tokenization
