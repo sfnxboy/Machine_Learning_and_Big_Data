@@ -103,4 +103,26 @@ Part-of-Speech, or PoS can be helpful for a veriety of different models in NLP. 
 
 ![image](https://user-images.githubusercontent.com/68082808/98897010-61c66700-2478-11eb-94a4-11dbe89b55c0.png)
 
-Source Code: [PoS](https://github.com/sfnxboy/Machine_Learning_and_Big_Data/blob/main/Part_of_Speech_Tagging.ipynb)
+Check the code out yourself! Source Code: [PoS](https://github.com/sfnxboy/Machine_Learning_and_Big_Data/blob/main/Part_of_Speech_Tagging.ipynb)
+
+- Natural Language Generation
+
+Natural Language Generation (NGL) is the processing task of generating natural language from a machine representation system such as a knowledge base. Popular examples include chatbots, automated custom reports, and custom webpage content. Most of the technology already exists to create meaningful content from natural language generation.
+
+- Bag-of-Words
+
+When we're building datasets for NLP, we need to consider how our program will interact with the text document we provide. If we create a bag-of-words (BoW) model (i.e., the most frequent words), we can build models from that. The basic idea behind this model is this: We have a document of words, but we don't care about the order of the words. We can count these words and create models based on how frequently they appear.
+
+- n-gram
+
+In NLP, there is an n-gram method, which is a sequence of items from a given text. With n-gram, you create groupings of items from the text of size 1 or more. The following n-grams are common:
+
+Unigram is an n-gram of size 1.
+Bigram is an n-gram of size 2.
+Trigram is an n-gram of size 3.
+
+For instance, a unigram for "I love programming" would be "I","love" and "programming". Its bigram would break up the sentence into sequential two-word chunks "I love", and "love programming", and the trigram would of course be "I love programming. Of course for longer sentences, we can always use larger groupings where n is a positive number. N-grams can be used for a variety of NLP tasks, but most involve text mining or extraction. You can also use n-grams for spellcheck and text summarization.
+
+- Text Similarity
+
+Another popular use case for NLP is determining document or sentence similarity. These are important use cases, because they can tell us a lot about a document and its contents. There are a number of ways to do text similarity, with varying levels of difficulty.
