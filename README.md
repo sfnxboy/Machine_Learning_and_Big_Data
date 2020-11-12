@@ -126,3 +126,21 @@ For instance, a unigram for "I love programming" would be "I","love" and "progra
 - Text Similarity
 
 Another popular use case for NLP is determining document or sentence similarity. These are important use cases, because they can tell us a lot about a document and its contents. There are a number of ways to do text similarity, with varying levels of difficulty.
+
+### Natural Language Processing Analyses
+
+There are three types of NLP analyses:
+
+-  analysis is essentially checking the dictionary definition of each element of a sentence or document. In this type of analysis, we don't care about the words that come before or after the word in question—we just care about the given word.
+- Sentiment analysis pertains to what the text means. Is it positive, negative, or neutral? You can come up with a score of how positive or negative the text is using NLP.
+- Semantic analysis entails extracting the meaning of the text. You want to analyze the meaning of each word, and then relate that to the meaning of the text as a whole.
+
+Within NLP, named-entity recognition (NER) is the concept of taking a document and finding all of the important terms within it. An important term can mean anything, from a politicians name, to a verb, to a place. Many names are already recognized, but you can always add more names to the list of recognized entities, as necessary. You train a model on data labeled with important entities so that the model can better distinguish which entities should be labeled in a different dataset.
+
+### Natural Language Processing Pipeline
+
+1. Raw Text: Start with the raw data.
+2. Tokenization: Separate the words from paragraphs, to sentences, to individual words.
+3. Stop Words Filtering: Remove common words like "a" and "the" that add no real value to what we are looking to analyze.
+4. Term Frequency-Inverse Document Frequency (TF-IDF): Statistically rank the words by importance compared to the rest of the words in the text. This is also when the words are converted from text to numbers.
+5. Machine Learning: Put everything together and run through the machine learning model to produce an output.
