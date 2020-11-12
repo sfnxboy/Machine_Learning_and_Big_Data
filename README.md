@@ -77,17 +77,17 @@ Natural language processing can get tricky. When individuals converse, they may 
 
 ### NLP Core Concepts
 
-- __**Tokenization**__
+- Tokenization
 
-**Tokenization** is the concept of splitting a document, or line of text, into smaller subsets of data that can be analyzed. It's the building block of most NLP uses. You can tokenize by paragraph, sentence, word, letter, etc.
+Tokenization is the concept of splitting a document, or line of text, into smaller subsets of data that can be analyzed. It's the building block of most NLP uses. You can tokenize by paragraph, sentence, word, letter, etc.
 
-**Original Sentence:** NLP has many uses!
+Original Sentence: NLP has many uses!
 
-**Tokenized by word:** ["NLP","has","many","uses","!"]
+Tokenized by word: ["NLP","has","many","uses","!"]
 
-- **Normalization**
+- Normalization
 
-**Normalization** is the process of taking misspelled words and converting them into their correct form, or sometimes a simpler form. This is another building block of NLP as it helps convert the text to a readable form, and allows us to create NLP programs on top of it. There are numerous ways to approach normalization, we will focus on two.
+Normalization is the process of taking misspelled words and converting them into their correct form, or sometimes a simpler form. This is another building block of NLP as it helps convert the text to a readable form, and allows us to create NLP programs on top of it. There are numerous ways to approach normalization, we will focus on two.
 
 ```
 **Stemming** removes the suffix from a word and reduces it to its original form. This serves as a “rough” cut off the end of the word. An example of stemming might be to     reduce “horses” to “horse” and “ponies” to “poni.” As seen here, the truncated form is not always a real word.
