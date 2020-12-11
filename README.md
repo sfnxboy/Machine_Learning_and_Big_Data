@@ -2,8 +2,13 @@
 
 Data is considered big data when it exceeds the capacity of operational databases. Working with datasets of this size creates unique challenges. How will we store all of this data? How can we access it quickly? How do we back up this type of data? A project dealing with big data outgrows Excel, SQL, and NoSQL databases. 
 
-## Hadoop
+## Four V's of Big Data  
+- Volume refers to the size of data (e.g., terabytes of product information). For instance, a year's worth of stock market transactions is a large amount of data.  
+- Velocity pertains to how quickly data comes in (customers across the world purchasing every second). As an example, McDonald's restaurants are worldwide with customers buying food at a constant rate, so the data comes in fast.  
+- Variety relates to different forms of data (e.g., user account information, product details, etc.). Consider the breadth of Netflix user information, videos, photos for thumbnails, and so forth.  
+- Veracity concerns the uncertainty of data (e.g., reviews might not be real and could come from bots). As an example, Netflix would want to verify whether users are actively watching the shows, falling asleep, or just playing them in the background.
 
+## Hadoop  
 Apache Hadoop (Hadoop) is one of the most popular open source frameworks, with numerous technologies for big data. Google developed Hadoop to process large amounts of data by splitting data across a distributed file system. Dealing with big data can be quite taxing on computer hardware. So with the power of connected computers that work together and perform tasks, Hadoop can store and process data.
 
 Hadoop has three main components:
